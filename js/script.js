@@ -13,9 +13,9 @@ const filterByType = (type, ...values) => values.filter(value => typeof value ==
 		}
 	},
 
-	showError = msgText => showResponseBlock('.dialog__response-block_error', msgText, '#error'),	// функция 
+	showError = msgText => showResponseBlock('.dialog__response-block_error', msgText, '#error'),	// функция вывода ошибки на страницу. Вызывает функцию отображения блока с информацией. В качестве пораметров передаются селекторы (один с классом, другой с id) и строка с сообщением
 
-	showResults = msgText => showResponseBlock('.dialog__response-block_ok', msgText, '#ok'),
+	showResults = msgText => showResponseBlock('.dialog__response-block_ok', msgText, '#ok'),		// функция вывода результата на страницу. Вызывает функцию отображения блока с информацией. В качестве пораметров передаются селекторы (один с классом, другой с id) и строка с сообщением
 
 	showNoResults = () => showResponseBlock('.dialog__response-block_no-results'),
 
